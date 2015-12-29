@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dxq_theme">#f0f0f0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="head_red">#F48FB1</color>
+    <color name="red">#ec407a</color>
+    <color name="pink">#FCE4EC</color>
+    <color name="text_white">#FAFAFA</color>
+    <color name="gray">#f7fAEB</color>
+    <color name="grays">#555555</color>
+    <color name="grayitem">#aaaaaa</color>
+    <color name="graychild">#dddddd</color>
+    <color name="whitegray">#F5F7F8</color>
+    <color name="text_gray">#757575</color>
+    <color name="clickbg_yellow">#f6f7ac</color>
+    <color name="blue">#009ACD</color>
+    <color name="itembg">#e0e0e0</color>
+    
+    
+	<!-- 谷歌 -->
+	<color name="google_red">#d62d20</color>
+    <color name="google_blue">#0057e7</color>
+    <color name="google_green">#008744</color>
+    <color name="google_yellow">#ffa700</color>
+</resources>

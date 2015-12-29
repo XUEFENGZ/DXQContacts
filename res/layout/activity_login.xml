@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dxq_theme_bk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/im_login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dxq_login_user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dxq_login_w" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/dxq_login_phone" />
+
+            <ImageView
+                android:id="@+id/im_login_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@drawable/dxq_login_getcode" />
+
+            <EditText
+                android:id="@+id/et_login_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toLeftOf="@+id/im_login_get"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入手机号"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/name" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dxq_login_w" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/dxq_login_pw" />
+
+            <EditText
+                android:id="@+id/et_login_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入验证码"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/name" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/im_login_bind"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dxq_login_bind" />
+    </LinearLayout>
+
+</LinearLayout>

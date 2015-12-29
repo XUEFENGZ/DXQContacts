@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dxq_fg_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bg"
+            android:layout_gravity="top"
+            android:background="@color/blue" >
+
+            <ImageView
+                android:id="@+id/im_searchbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_action_search" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/home_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title" />
+        </RelativeLayout>
+
+        <com.quinny898.library.persistentsearch.SearchBox
+            android:id="@+id/searchbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginRight="-6dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.94" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grays"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                style="@style/tab_rb_style"
+                android:background="@drawable/radio_color"
+                android:checked="true"
+                android:drawableTop="@drawable/dxq_home_h"
+                android:text="@string/home" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dxq_line_h" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                style="@style/tab_rb_style"
+                android:background="@drawable/radio_color"
+                android:drawableTop="@drawable/dxq_home_p"
+                android:text="@string/home_recentcalls" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dxq_line_h" />
+
+            <RadioButton
+                android:id="@+id/radiobutton3"
+                style="@style/tab_rb_style"
+                android:background="@drawable/radio_color"
+                android:drawableTop="@drawable/dxq_home_s"
+                android:text="@string/home_set" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

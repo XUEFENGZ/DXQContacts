@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_swf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/ly_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/im1_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/dxq_home_im01" />
+
+            <ImageView
+                android:id="@+id/im2_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:src="@drawable/dxq_home_im02" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/im3_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/dxq_home_im03" />
+
+            <ImageView
+                android:id="@+id/im4_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:src="@drawable/dxq_home_im04" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/im5_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/dxq_home_im05" />
+
+            <ImageView
+                android:id="@+id/im6_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" 
+                android:src="@drawable/dxq_home_im06"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

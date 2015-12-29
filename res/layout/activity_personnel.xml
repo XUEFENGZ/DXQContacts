@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bg"
+        android:background="@color/blue" >
+
+        <LinearLayout
+            android:id="@+id/ps_back_ly"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ps_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="一级"
+            android:maxLength="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title" />
+
+        <ImageView
+            android:id="@+id/ps_im_searchbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_action_search" />
+    </RelativeLayout>
+
+    <com.quinny898.library.persistentsearch.SearchBox
+        android:id="@+id/ps_searchbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginRight="-6dp"
+        android:visibility="gone" />
+
+    <com.daxiangqun.contacts.library.RefreshLayout
+        android:id="@+id/ps_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ExpandableListView
+            android:id="@+id/ps_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"  
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </ExpandableListView>
+    </com.daxiangqun.contacts.library.RefreshLayout>
+
+</LinearLayout>

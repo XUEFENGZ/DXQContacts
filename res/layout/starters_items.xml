@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tv1_starters_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:maxLines="1"
+            android:text="旅游局名字"
+            android:textColor="@color/black"
+            android:textSize="@dimen/name" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv1_starters_item"
+            android:layout_below="@+id/tv1_starters_item"
+            android:text="地址:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <LinearLayout
+            android:id="@+id/ly_starters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1_starters_item"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv2_starters_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国"
+                android:textColor="@color/grays"
+                android:textSize="@dimen/details" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_starters_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/ly_starters"
+            android:text="邮编:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/tv3_starters_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_starters_ly"
+            android:layout_alignBottom="@+id/tv_starters_ly"
+            android:layout_alignLeft="@+id/ly_starters"
+            android:text="100000"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dxq_set_into" />
+    </RelativeLayout>
+
+  <!--   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/itembg" /> -->
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/dxq_theme" />
+
+</LinearLayout>

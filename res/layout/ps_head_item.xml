@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ps_head_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/ps_head_tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:text="旅游局名字"
+        android:textColor="@color/black"
+        android:textSize="@dimen/name" />
+
+    <LinearLayout
+        android:id="@+id/ps_head_lytel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvtel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010-888888"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_head_lyaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_head_lyid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ps_head_tvh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮编:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100000"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_head_lyfax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传真:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvfax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000000"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_head_lyemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lvyouju@163.com"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_head_lyurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱:"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+
+        <TextView
+            android:id="@+id/ps_head_tvurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.lvyouju.com"
+            android:textColor="@color/grays"
+            android:textSize="@dimen/details" />
+    </LinearLayout>
+
+</LinearLayout>
